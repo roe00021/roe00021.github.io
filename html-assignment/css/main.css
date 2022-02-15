@@ -21,7 +21,7 @@ li:nth-child(odd) {
     background: teal;
 }
 a:link, a:visited {
-    background-color: white;
+    background-color: pink;
     color: black;
     border: 5px solid teal;
     padding: 20px 40px;
@@ -32,7 +32,7 @@ a:hover, a:active {
     background-color: violet;
     color: white;
 }
-#navigation {
+.navigation {
     margin-top: 40px;
     margin-bottom: 40px;
 }
