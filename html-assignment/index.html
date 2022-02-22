@@ -6,13 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <header>
-        <h1>Mackenzie Roe</h1>
+        <h1 class="site-title">Mackenzie Roe</h1>
     </header>
-    <hr>
+    <nav class="navigation">
+        <a href="notes.html">Notes</a>
+    </nav>
     <article>
         <h2>About Me</h2>
         <br>
@@ -29,7 +32,7 @@
             since a kid. I built my first PC a while ago and have always been able to repair my own devices. I'm looking
             forward to learning HTML and some CSS over the course of the semester!</p>
         <p>Here is a list of my hobbies:</p>
-        <ol>
+        <ol id="hobby-list">
             <li>Photography & Videography</li>
             <li>Guitar</li>
             <li>Rowing</li>
@@ -46,11 +49,7 @@
         with the results of other people's thinking." <cite>- Steve Jobs</cite>
     </blockquote>
     <p>Assignment 1 & 2 | <abbr title="Hyper Text Markup Language">HTML</abbr> Semantics for MTM6130_020</p>
-
-    <img src="images/portrait.jpeg" alt="this is a portrait of myself" width="400" height="400">
-    <br>
-    <a href="notes.html">Notes webpage</a>
-    <hr>
+    <img id="my-image" src="images/portrait.jpeg" alt="this is a portrait of myself" width="400" height="400">
     <footer>
         <h6>Copyright Mackenzie Roe February 1<sup>st</sup>, 2022</h6>
     </footer>

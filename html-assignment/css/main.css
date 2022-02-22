@@ -1,0 +1,38 @@
+header, footer {
+    padding: 40px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.site-title {
+    color: teal;
+}
+#my-image {
+    box-shadow: 0px 0px 2px 1px black;
+}
+#hobby-list {
+    list-style-type: square;
+}
+li:nth-child(odd) {
+    background: teal;
+}
+a:link, a:visited {
+    background-color: pink;
+    color: black;
+    border: 5px solid teal;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+}
+a:hover, a:active {
+    background-color: violet;
+    color: white;
+}
+.navigation {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
