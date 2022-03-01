@@ -1,0 +1,20 @@
+html{
+    box-sizing: border-box;
+}
+  *,
+  *:before,
+  *:after{
+    box-sizing: inherit;
+}
+body{
+    background-color: #aad4cf;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    width: 600px;
+    margin: 0 auto;
+}
+.small-starfish{
+    width: 200px;
+    float: left;
+}
