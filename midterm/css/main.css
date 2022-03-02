@@ -12,14 +12,13 @@ body{
 }
 .wrapper{
     width: 950px;
-    height: 500px;
+    height: 100%;
     margin: 0 auto;
     background-color: #D5E9E7;
     padding: 20px;
-    display: inline-block;
 }
 .banner{
-    width: 950px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
 }
@@ -27,4 +26,28 @@ body{
     width: 250px;
     float: left;
     padding: 20px;
+}
+input[type=text]{
+    width: 100%;
+    padding: 10px 0px 10px;
+    margin: 5px 0px 10px;
+    border: 1px solid #ccc;
+}
+textarea{
+    width: 100%;
+    padding: 20px 0px 20px;
+    margin: 5px 0px 5px;
+    resize: none;
+}
+input[type=submit]{
+    width: 8%;
+    padding: 10px;
+    margin: 5px 0px 5px;
+    display: inline-block;
+    border: 1px solid black;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+.form-box{
+    border: 1px solid black;
 }
