@@ -17,7 +17,7 @@ body{
     background-color: #D5E9E7;
     padding: 20px;
 }
-.banner{
+.banner{ 
     position: relative;
     width: 100%;
     height: auto;
@@ -25,10 +25,11 @@ body{
 }
 .page-heading{
     left: 0;
-    position:absolute;
+    position: relative;
     text-align:center;
-    top: 30px;
-    width: 100%
+    top: -110px;
+    width: 100%;
+    color: white;
 }
 .small-starfish{
     width: 250px;
