@@ -18,9 +18,17 @@ body{
     padding: 20px;
 }
 .banner{
+    position: relative;
     width: 100%;
     height: auto;
     margin: 0 auto;
+}
+.page-heading{
+    left: 0;
+    position:absolute;
+    text-align:center;
+    top: 30px;
+    width: 100%
 }
 .small-starfish{
     width: 250px;
