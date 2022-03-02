@@ -11,10 +11,19 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .wrapper{
-    width: 600px;
+    width: 950px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #D5E9E7;
+    padding: 20px;
+}
+.banner{
+    width: 950px;
+    height: auto;
     margin: 0 auto;
 }
 .small-starfish{
-    width: 200px;
+    width: 250px;
     float: left;
+    padding: 20px;
 }
