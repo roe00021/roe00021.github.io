@@ -17,6 +17,22 @@ body{
     background-color: #D5E9E7;
     padding: 20px;
 }
+nav ul{
+    list-style-type: none;
+    padding-left: 0px;
+    text-transform: uppercase;
+}
+nav li{
+    background-color: white;
+    display: inline-block;
+    width: 30%;
+}
+nav li::before{
+    margin-right: 10px;
+}
+nav li :nth-child(2) {
+    display: none;
+}
 .banner{ 
     position: relative;
     width: 100%;
