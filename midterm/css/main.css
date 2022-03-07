@@ -125,7 +125,7 @@ input[type=submit]{
 /* formats all headings */
 h1, h2, h3, h4{
     font-weight: lighter;
-    margin: 10px 0px 10px;
+    margin: 20px 0px 10px;
 }
 /* sizes all headings individually */
 h1{
