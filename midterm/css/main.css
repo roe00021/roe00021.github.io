@@ -89,11 +89,15 @@ textarea{
 input[type=submit]{
     width: 8%;
     padding: 10px;
-    margin: 15px 0px 5px;
+    margin: 10px 0px 10px;
     display: inline-block;
     border: 1px solid black;
     background-color: transparent;
     text-transform: uppercase;
+}
+.radio-form{
+    margin: 20px 0px 0px;
+    padding-top: 5px;
 }
 /* creates border and padding for the form fields */
 .form-box{
