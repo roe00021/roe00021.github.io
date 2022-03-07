@@ -46,7 +46,6 @@ nav li :nth-child(2) {
     border-left: 1px solid black;
     border-right: 1px solid black;
     margin-top: 18px;
-    text
 }
 /* creates proper size and position of the banner image */
 .banner{ 
@@ -86,9 +85,6 @@ textarea{
     margin: 5px 0px 5px;
     resize: none;
 }
-/* .radio-form{ 
-    float: right;
-}*/
 /* formats "SEND" button */
 input[type=submit]{
     width: 8%;
