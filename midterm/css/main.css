@@ -5,27 +5,35 @@ html{
   *:before,
   *:after{
     box-sizing: inherit;
+    text-decoration: none;
+    color: black;
+    margin: 0 auto;
 }
+/*  creates standard font across website */
 body{
     background-color: #aad4cf;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* creates main body portion of the webpage(ligth blue section) */
 .wrapper{
     width: 950px;
     height: 100%;
-    margin: 0 auto;
     background-color: #D5E9E7;
-    padding: 20px;
 }
+/* creates styling for navigation with a focus on centering and proper spacing */
 nav ul{
     list-style-type: none;
     padding-left: 0px;
+    margin: 0px;
     text-transform: uppercase;
+    color: black;
+    font-size: 24px;
 }
 nav li{
-    background-color: white;
+    background-color: none;
     display: inline-block;
-    width: 30%;
+    width: 32%;
+    text-align: center;
 }
 nav li::before{
     margin-right: 10px;
@@ -33,46 +41,102 @@ nav li::before{
 nav li :nth-child(2) {
     display: none;
 }
+.middle-nav {
+    display: inline-block;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin-top: 18px;
+    text
+}
+/* creates proper size and position of the banner image */
 .banner{ 
     position: relative;
     width: 100%;
     height: auto;
     margin: 0 auto;
 }
+/* formats and places "Lone Star" heading text */
 .page-heading{
     left: 0;
     position: relative;
     text-align:center;
-    top: -110px;
+    bottom: 140px;
     width: 100%;
     color: white;
 }
+/* places the starfish image on left side with proper padding */
 .small-starfish{
     width: 250px;
     float: left;
     padding: 20px;
+    padding-left: 0;
+    padding-top: 0;
 }
+/* formats "Your Name" and "Your Email" imput fields */
 input[type=text]{
     width: 100%;
     padding: 10px 0px 10px;
     margin: 5px 0px 10px;
     border: 1px solid #ccc;
 }
+/* formats "Your Message" with proper sizing and removing the resize */
 textarea{
     width: 100%;
     padding: 20px 0px 20px;
     margin: 5px 0px 5px;
     resize: none;
 }
+/* .radio-form{ 
+    float: right;
+}*/
+/* formats "SEND" button */
 input[type=submit]{
     width: 8%;
     padding: 10px;
-    margin: 5px 0px 5px;
+    margin: 15px 0px 5px;
     display: inline-block;
     border: 1px solid black;
     background-color: transparent;
     text-transform: uppercase;
 }
+/* creates border and padding for the form fields */
 .form-box{
     border: 1px solid black;
+    padding-top: 30px;
+}
+/* creates proper spacing for the header */
+.header {
+    height: 300px;
+}
+/* creates padding for main section of the webpages */
+.info {
+    padding: 20px;
+}
+/* places copywrite text */
+.footer{
+    text-align: right;
+    padding: 0px 20px 30px;
+    margin: 10px;
+}
+/* removes left side spacing on the facts about starfish */
+.facts-list{
+    padding: 0px 15px 0px;
+}
+/* formats all headings */
+h1, h2, h3, h4{
+    font-weight: lighter;
+    margin: 20px 0px 10px;
+}
+/* sizes all headings individually */
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 34px;
+}
+h3{
+    font-size: 24px;
+}
+h4{
+    font-size: 18px;
 }
