@@ -59,7 +59,7 @@ nav li :nth-child(2) {
     left: 0;
     position: relative;
     text-align:center;
-    bottom: 140px;
+    bottom: 156px;
     width: 100%;
     color: white;
 }
@@ -125,7 +125,7 @@ input[type=submit]{
 /* formats all headings */
 h1, h2, h3, h4{
     font-weight: lighter;
-    margin: 20px 0px 10px;
+    margin: 10px 0px 10px;
 }
 /* sizes all headings individually */
 h1{
