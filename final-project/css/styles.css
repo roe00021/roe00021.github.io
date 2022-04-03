@@ -1,3 +1,40 @@
+html{
+    box-sizing: border-box;
+}
+  *,
+  *:before,
+  *:after{
+    box-sizing: inherit;
+    text-decoration: none;
+    color: black;
+    margin: 0 auto;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
 body{
-    background-color: #369;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    background-color: #222222;
+    padding: 1rem;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+ul li{
+    margin-bottom: 1rem;
+}
+a:link, a:visited{
+    text-decoration: none;
+    color: #C78B07;
+}
+a:hover, a:active{
+    text-decoration: underline;
+    color: #ffffff;
 }
