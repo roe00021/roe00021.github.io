@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTM6130 Final Project - roe00021</title>
+    <!-- font awesome kit implementation -->
     <script src="https://kit.fontawesome.com/572c8d7756.js" crossorigin="anonymous"></script>
+    <!-- google fonts implementation -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">  
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- creates header section with navigation -->
@@ -25,184 +27,209 @@
                 <li><a href="#">Team</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+            <form id="nav-search">
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><i id="nav-search-button"></i></button>
+            </form>
         </nav>
     </header>
     <!-- creates banner section with a p class of light text on dark backgrounds -->
-    <div class="banner">
+    <div class="grid-1 banner">
         <div class="responsive-image">
             <img src="images/main-banner.jpg" alt="people-in-office">
         </div>
-        <div class="wrapper banner-background">
+        <!-- creates background banner section -->
+        <div class="wrapper banner-forground">
             <h1>Welcome to Three Star Media</h1>
+            <!-- text light class for white text -->
             <p class="light-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatem expedita aliquid molestiae, ducimus iusto velit cumque voluptate nam architecto? Tenetur repellendus dolorum sunt eveniet facilis nulla ab culpa magni incidunt iure architecto error qui itaque maxime ut possimus ad dolore at, commodi eligendi! Quaerat nihil eveniet voluptatum quasi nisi?</p>
             <a class="button banner-button" href="connect-with-us">Connect with us</a>
         </div>
     </div>
     <!-- creates about us section with a p class of dark text on light backgrounds -->
-    <div class="about-us">
+    <div class="grid-2 about-us">
         <div class="wrapper">
             <!-- creates responsive image class -->
             <div class="responsive-image">
                 <img src="images/about-us.jpg" alt="ping-pong-table">
             </div>
             <h2>About Us</h2>
+            <!-- dark text class for black text -->
             <p class="dark-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, quas! Facere, culpa vel, quia, quibusdam vero ipsam pariatur iusto vitae quo quis temporibus ipsum voluptatibus ex. Labore amet impedit consequuntur commodi, ex enim, eveniet assumenda eum dolorum blanditiis est beatae rerum quas molestiae suscipit, esse sit aliquid ab alias nisi?</p>
             <p class="dark-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam omnis quibusdam suscipit corrupti labore provident officiis cumque repudiandae tempora, minus commodi ea molestias blanditiis incidunt, dolorem vel reprehenderit. Vel nisi aut, nihil hic placeat ipsum dolor officiis? Repellendus enim, id suscipit ea tempore officiis ullam omnis minima deleniti! Dolore, nemo!</p>
         </div>
-        <div class="our-services">
-            <div class="wrapper">
-                <!-- each services section is wrapped within its own div -->
-                <h2>Our Services</h2>
-                <!-- this marks the start of the div for the grid section -->
-                <div class="digital-transformation">
-                    <div class="responsive-image">
-                        <img src="images/digital.jpg" alt="phone-and-laptop">
-                    </div>
-                    <h3>Digital Transformation</h3>
-                    <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam. Accusantium numquam quisquam expedita, eius ab vitae dolores quidem aliquid, maiores velit assumenda provident. Dolorem illum quas quod placeat natus ullam aspernatur magni omnis?</p>
-                    <a class="button services-buttons" href="digital-plans">Digital Plans</a>
+    </div>
+    <div class="grid-3 our-services">
+        <div class="wrapper">
+            <!-- each services section is wrapped within its own div -->
+            <h2>Our Services</h2>
+            <!-- this marks the start of the div for the grid section -->
+            <div class="digital-transformation">
+                <div class="responsive-image">
+                    <img src="images/digital.jpg" alt="phone-and-laptop">
                 </div>
-                <!-- this marks the end of Digital Transformation section -->
-                <!-- marketing start -->
-                <div class="marketing">
-                    <div class="responsive-image">
-                        <img src="images/marketing.jpg" alt="laptop-with-charts">
-                    </div>
-                    <h3>Marketing</h3>
-                    <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis
-                        veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam. Accusantium numquam
-                        quisquam expedita, eius ab vitae dolores quidem aliquid, maiores velit assumenda provident. Dolorem illum quas quod
-                        placeat natus ullam aspernatur magni omnis?</p>
-                    <a class="button services-buttons" href="marketing">Marketing</a>
-                </div>
-                <!-- marketing end -->
-                <!-- video production start -->
-                <div class="video-production">
-                    <div class="responsive-image">
-                        <img src="images/video.jpg" alt="phone-with-youtube">
-                    </div>
-                    <h3>Video Production</h3>
-                    <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis
-                        veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam. Accusantium numquam
-                        quisquam expedita, eius ab vitae dolores quidem aliquid, maiores velit assumenda provident. Dolorem illum quas quod
-                        placeat natus ullam aspernatur magni omnis?</p>
-                    <a class="services-buttons" href="video-plans">Video Plans</a>
-                </div>
-                <!-- video production end -->
-                <!-- web dev start -->
-                <div class="web-development">
-                    <div class="responsive-image">
-                        <img src="images/web.jpg" alt="phone-with-pen-and-paper">
-                    </div>
-                    <h3>Web Development</h3>
-                    <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis
-                        veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam. Accusantium numquam
-                        quisquam expedita, eius ab vitae dolores quidem aliquid, maiores velit assumenda provident. Dolorem illum quas quod
-                        placeat natus ullam aspernatur magni omnis?</p>
-                    <a class="button services-buttons" href="web-plans">Web Plans</a>
-                </div>
-                <!-- web dev end -->
-                <!-- print start -->
-                <div class="print">
-                    <div class="responsive-image">
-                        <img src="images/print.jpg" alt="news-paper-stands">
-                    </div>
-                    <h3>Print</h3>
-                    <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis
-                        veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam. Accusantium numquam
-                        quisquam expedita, eius ab vitae dolores quidem aliquid, maiores velit assumenda provident. Dolorem illum quas quod
-                        placeat natus ullam aspernatur magni omnis?</p>
-                    <a class="button services-buttons" href="print-plans">Print Plans</a>
-                </div>
-                <!-- print end -->
+                <h3>Digital Transformation</h3>
+                <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam. Accusantium numquam quisquam expedita, eius ab vitae dolores quidem aliquid, maiores velit assumenda provident. Dolorem illum quas quod placeat natus ullam aspernatur magni omnis?</p>
+                <a class="button services-buttons" href="digital-plans">Digital Plans</a>
             </div>
         </div>
-        <!-- creates class and section for our vision -->
-        <div class="our-vision">
+    </div>
+    <!-- this marks the end of Digital Transformation section -->
+    <!-- marketing start -->
+    <div class="grid-4 marketing">
+        <div class="wrapper">
             <div class="responsive-image">
-                <img src="images/vision.jpg" alt="paper-boats">
+                <img src="images/marketing.jpg" alt="laptop-with-charts">
             </div>
-            <div class="wrapper">
-                <h3>Our Vision</h3>
-                <p class="light-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, quo quod necessitatibus magni rem laudantium nemo accusantium, exercitationem blanditiis magnam quam sunt numquam nulla eius delectus sed, natus debitis voluptate! Voluptates cum doloribus earum eveniet a, ut asperiores laboriosam delectus expedita, praesentium, sed deserunt. Placeat consequatur perferendis porro corporis quod!</p>
-                <a class="button our-vision-button" href="learn-more">Learn More</a>
+            <h3>Marketing</h3>
+            <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis
+                veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam. Accusantium numquam
+                quisquam expedita, eius ab vitae dolores quidem aliquid, maiores velit assumenda provident. Dolorem illum quas quod
+                placeat natus ullam aspernatur magni omnis?</p>
+            <a class="button services-buttons" href="marketing">Marketing Plans</a>
+        </div>
+    </div>
+    <!-- marketing end -->
+    <!-- video production start -->
+    <div class="grid-5 video-production">
+        <div class="wrapper">
+            <div class="responsive-image">
+                <img src="images/video.jpg" alt="phone-with-youtube">
+            </div>
+            <h3>Video Production</h3>
+            <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis
+                veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam. Accusantium numquam
+                quisquam expedita, eius ab vitae dolores quidem aliquid, maiores velit assumenda provident. Dolorem illum quas quod
+                placeat natus ullam aspernatur magni omnis?</p>
+            <a class="services-buttons" href="video-plans">Video Plans</a>
+        </div>
+    </div>
+    <!-- video production end -->
+    <!-- web dev start -->
+    <div class="grid-6 web-development">
+        <div class="wrapper">
+            <div class="responsive-image">
+                <img src="images/web.jpg" alt="phone-with-pen-and-paper">
+            </div>
+            <h3>Web Development</h3>
+            <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis
+                veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam. Accusantium numquam
+                quisquam expedita, eius ab vitae dolores quidem aliquid, maiores velit assumenda provident. Dolorem illum quas quod
+                placeat natus ullam aspernatur magni omnis?</p>
+            <a class="button services-buttons" href="web-plans">Web Plans</a>
+        </div>
+    </div>
+    <!-- web dev end -->
+    <!-- print start -->
+    <div class="grid-7 print">
+        <div class="wrapper">
+            <div class="responsive-image">
+                <img src="images/print.jpg" alt="news-paper-stands">
+            </div>
+            <h3>Print</h3>
+            <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis
+                veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam. Accusantium numquam
+                quisquam expedita, eius ab vitae dolores quidem aliquid, maiores velit assumenda provident. Dolorem illum quas quod
+                placeat natus ullam aspernatur magni omnis?</p>
+            <a class="button services-buttons" href="print-plans">Print Plans</a>
+        </div>
+    </div>
+    <!-- print end -->
+    <!-- creates class and section for our vision -->
+    <!-- no wrapper class over image as the image will span 100% of the background width -->
+    <div class="grid-8 our-vision">
+        <div class="paper-boats responsive-image">
+            <img src="images/vision.jpg" alt="paper-boats">
+        </div>
+        <div class="wrapper">
+            <h3>Our Vision</h3>
+            <p class="light-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, quo quod necessitatibus magni rem laudantium nemo accusantium, exercitationem blanditiis magnam quam sunt numquam nulla eius delectus sed, natus debitis voluptate! Voluptates cum doloribus earum eveniet a, ut asperiores laboriosam delectus expedita, praesentium, sed deserunt. Placeat consequatur perferendis porro corporis quod!</p>
+            <a class="button our-vision-button" href="learn-more">Learn More</a>
+        </div>
+    </div>
+    <!-- creates section for out team -->
+    <div class="our-team">
+        <div class="wrapper">
+            <h2>Our Team</h2>
+            <div class="grid-9 john-doe">
+                <div class="responsive-image">
+                    <img src="images/john.jpg" alt="portrait-of-john">
+                </div>
+                <div class="grid-10 team-text">
+                    <h3>John Doe</h3>
+                    <h4>CEO and Co-owner</h4>
+                    <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel saepe accusantium maiores reiciendis. Aspernatur facere dicta deleniti saepe quos asperiores autem temporibus, culpa voluptas corporis ad natus alias ratione distinctio tenetur voluptatum in quidem laudantium, blanditiis assumenda sit sapiente laborum? Aut molestiae quidem quos tempora accusamus, impedit quaerat commodi porro!</p>
+                </div>
             </div>
         </div>
-        <div class="our-team">
-            <div class="wrapper">
-                <h2>Our Team</h2>
+            <div class="grid-11 bob-rite">
                 <div class="responsive-image">
                     <img src="images/bob.jpg" alt="portrait-of-bob">
                 </div>
-                <div class="team-text">
+                <div class="grid-12 team-text">
                     <h3>Bob Rite</h3>
                     <h4>CFO and Co-owner</h4>
                     <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel saepe accusantium maiores reiciendis. Aspernatur facere dicta deleniti saepe quos asperiores autem temporibus, culpa voluptas corporis ad natus alias ratione distinctio tenetur voluptatum in quidem laudantium, blanditiis assumenda sit sapiente laborum? Aut molestiae quidem quos tempora accusamus, impedit quaerat commodi porro!</p>
                 </div>
-                <div class="responsive-image">
-                    <img src="images/john.jpg" alt="portrait-of-john">
-                </div>
-                <div class="team-text">
-                    <h3>John Doe</h3>
-                    <h4>CEO and Co-owner</h4>
-                    <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel saepe accusantium maiores
-                        reiciendis. Aspernatur facere dicta deleniti saepe quos asperiores autem temporibus, culpa voluptas corporis ad
-                        natus alias ratione distinctio tenetur voluptatum in quidem laudantium, blanditiis assumenda sit sapiente
-                        laborum? Aut molestiae quidem quos tempora accusamus, impedit quaerat commodi porro!</p>
-                </div>
-                
-
             </div>
-        </div>
-        <div class="contact-us">
-            <div class="wrapper">
-                <h2>Contact Us</h2>
-                <div class="send-message">
-                    <h3>Send us a message</h3>
-                    <div class="form-section">
-                        <form action="index.html">
-                            <label for="full-name">Full Name</label>
-                            <input type="text" id="full-name" name="full-name">
-                            <label for="email">Email</label>
-                            <input type="text" id="email" name="email">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message"></textarea>
-                            <input type="submit" id="submit" value="submit">
-                        </form>
-                    </div>
-                </div>
-                <div class="location">
-                    <h2>Location</h2>
-                    <div class="map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11215.778950128877!2d-75.7549368!3d45.3499278!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1648577063656!5m2!1sen!2sca"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-                <div class="hours-of-operation">
-                    <table class="operation-table">
-                        <tr>
-                            <th>Days</th>
-                            <th>Hours</th>
-                        </tr>
-                        <tr>
-                            <th>Monday - Friday</th>
-                            <th>9 AM - 6 PM</th>
-                        </tr>
-                        <tr>
-                            <th>Saturday - Sunday</th>
-                            <th>Closed</th>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <footer>
-            <div class="wrapper">
-                <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, iure.</p>
-            </div>
-        </footer>
     </div>
+    <!-- creates contact us section -->
+    <div class="grid-13 contact-us">
+        <div class="wrapper">
+            <h2>Contact Us</h2>
+            <div class="send-message">
+                <h3>Send us a message</h3>
+                <div class="form-section">
+                    <form action="index.html">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="full-name">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                        <input type="submit" id="submit" value="send">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- creates location section with the base info for a table to be created with css -->
+    <div class="grid-14 hours-of-operation">
+        <div class="wrapper"></div>
+        <h2>Hours of operation</h2>
+        <table class="operation-table">
+            <tr>
+                <th>Days</th>
+                <th>Hours</th>
+            </tr>
+            <tr>
+                <th>Monday - Friday</th>
+                <th>9 AM - 6 PM</th>
+            </tr>
+            <tr>
+                <th>Saturday - Sunday</th>
+                <th>Closed</th>
+            </tr>
+        </table>
+    </div>
+    <!-- creates location section -->
+    <div class="grid-15 location">
+        <div class="wrapper">
+            <h2>Location</h2>
+            <div class="map">
+                <!-- implements google maps -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11215.778950128877!2d-75.7549368!3d45.3499278!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1648577063656!5m2!1sen!2sca"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <p class="footer-text">&copy; Copyright Three Star Media, 2022</p>
+            <p class="footer-text">All images are teken from <a href="https://unsplash.com/" target="_blank">Upsplash</a></p>
+        </div>
+    </footer>
 </body>
 </html>
