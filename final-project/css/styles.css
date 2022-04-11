@@ -1,11 +1,10 @@
-/* html{
+html{
     box-sizing: border-box;
 }
   *,
   *:before,
   *:after{
     box-sizing: inherit;
-    text-decoration: none;
     color: black;
     margin: 0 auto;
 }
@@ -19,6 +18,16 @@ body{
     background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
 }
+.wrapper{
+    margin: 1rem auto;
+    width: 95%;
+    background-color: none;
+    padding: 1rem;
+}
+img{
+    width: 100%;
+    height: auto;
+}
 header{
     background-color: #222222;
     padding: 1rem;
@@ -30,11 +39,109 @@ ul{
 ul li{
     margin-bottom: 1rem;
 }
-a:link, a:visited{
+.nav-buttons, a:visited{
     text-decoration: none;
-    color: #C78B07;
+    color: #c78c06;
 }
 a:hover, a:active{
     text-decoration: underline;
-    color: #ffffff;
+}
+.responsive-image{
+    width: 100%;
+    margin-bottom: -1rem;
+}
+#star-logo{
+    max-width: 10%;
+}
+h1{
+    margin: 1rem 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
+h2{
+    margin: 2rem 0 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+h3{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+h4{
+    margin: -1rem 0 0 ;
+    font-size: 0.75rem;
+}
+p{
+    margin-bottom: 2rem;
+    font-size: .8rem;
+}
+.services-buttons{
+    padding: 1rem;
+    background-color: #222;
+    color: white;
+}
+.light-carets{
+    font-size: 1.5rem;
+    padding: 0.25rem;
+    color: white;
+}
+.about-us{
+    background-color: #ffe6ac;
+}
+.text-background{
+    background-color: #ffe6ac;
+    margin: 0;
+    padding: 1rem 1rem 2rem;
+    border: 1rem;
+}
+.paper-boats{
+    width: 100%;
+}
+/* .our-team-line{
+    color: #976a02;
+    background-color: #976a02;
 } */
+.team-dark-text{
+    padding-top: 1rem;
+}
+input[type=text]{
+    width: 100%;
+    padding: 0.2rem;
+    margin: 0.5rem 0 0.5rem;
+    border: 1px solid #ccc;
+}
+/* formats "Message" with proper sizing and removing the resize */
+textarea{
+    width: 100%;
+    padding: 2.5rem;
+    margin: 0.5rem 0 0.5rem;
+    resize: none;
+}
+/* formats "Send" button */
+input[type=submit]{
+    padding: 5px;
+    margin: auto;
+    display: inline-block;
+    border: none;
+    background-color: #222;
+    color: #c78c06;
+}
+.operations-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.map iframe{
+    border: 0;
+    width: 100%;
+    height: 20rem;
+}
+footer{
+    background-color: #222;
+}
+.footer-text{
+    color: #c78c06;
+}
+.footer-link{
+    text-decoration: underline;
+}

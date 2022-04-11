@@ -10,7 +10,8 @@
     <!-- google fonts implementation -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+     <!--links to css file  -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -18,14 +19,14 @@
     <header class="clearfix">
         <nav>
             <div class="responsive-image">
-                <img src="images/logo.png" alt="star-logo">
+                <img src="images/logo.png" alt="star-logo" id="star-logo">
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="home-button">Home</a></li>
+                <li><a href="#" class="nav-buttons">About Us</a></li>
+                <li><a href="#" class="nav-buttons">Services</a></li>
+                <li><a href="#" class="nav-buttons">Team</a></li>
+                <li><a href="#" class="nav-buttons">Contact</a></li>
             </ul>
             <form id="nav-search">
                 <input type="text" placeholder="Search" name="search">
@@ -35,15 +36,15 @@
     </header>
     <!-- creates banner section with a p class of light text on dark backgrounds -->
     <div class="grid-1 banner">
-        <div class="responsive-image">
+        <div class="banner-image responsive-image">
             <img src="images/main-banner.jpg" alt="people-in-office">
         </div>
         <!-- creates background banner section -->
         <div class="wrapper banner-forground">
             <h1>Welcome to Three Star Media</h1>
             <!-- text light class for white text -->
-            <p class="light-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatem expedita aliquid molestiae, ducimus iusto velit cumque voluptate nam architecto? Tenetur repellendus dolorum sunt eveniet facilis nulla ab culpa magni incidunt iure architecto error qui itaque maxime ut possimus ad dolore at, commodi eligendi! Quaerat nihil eveniet voluptatum quasi nisi?</p>
-            <a class="button banner-button" href="connect-with-us">Connect with us</a>
+            <p class="light-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatem expedita aliquid molestiae, ducimus iusto velit cumque voluptate nam architecto?</p>
+            <a class="button banner-button" href="connect-with-us">Connect with us<i class="fa-solid fa-caret-right"></i></a>
         </div>
     </div>
     <!-- creates about us section with a p class of dark text on light backgrounds -->
@@ -55,8 +56,8 @@
             </div>
             <h2>About Us</h2>
             <!-- dark text class for black text -->
-            <p class="dark-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, quas! Facere, culpa vel, quia, quibusdam vero ipsam pariatur iusto vitae quo quis temporibus ipsum voluptatibus ex. Labore amet impedit consequuntur commodi, ex enim, eveniet assumenda eum dolorum blanditiis est beatae rerum quas molestiae suscipit, esse sit aliquid ab alias nisi?</p>
-            <p class="dark-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam omnis quibusdam suscipit corrupti labore provident officiis cumque repudiandae tempora, minus commodi ea molestias blanditiis incidunt, dolorem vel reprehenderit. Vel nisi aut, nihil hic placeat ipsum dolor officiis? Repellendus enim, id suscipit ea tempore officiis ullam omnis minima deleniti! Dolore, nemo!</p>
+            <p class="dark-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, quas! Facere, culpa vel, quia, quibusdam vero ipsam pariatur iusto vitae quo quis temporibus ipsum voluptatibus ex.</p>
+            <p class="dark-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam omnis quibusdam suscipit corrupti labore provident officiis cumque repudiandae tempora, minus commodi ea molestias blanditiis incidunt, dolorem vel reprehenderit.</p>
         </div>
     </div>
     <div class="grid-3 our-services">
@@ -68,9 +69,11 @@
                 <div class="responsive-image">
                     <img src="images/digital.jpg" alt="phone-and-laptop">
                 </div>
-                <h3>Digital Transformation</h3>
-                <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam. Accusantium numquam quisquam expedita, eius ab vitae dolores quidem aliquid, maiores velit assumenda provident. Dolorem illum quas quod placeat natus ullam aspernatur magni omnis?</p>
-                <a class="button services-buttons" href="digital-plans">Digital Plans</a>
+                <div class="text-background">
+                    <h3>Digital Transformation</h3>
+                    <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam.</p>
+                    <a class="button services-buttons" href="digital-plans">Digital Plans<i class="fa-solid fa-caret-right light-carets"></i></a>
+                </div>
             </div>
         </div>
     </div>
@@ -81,12 +84,11 @@
             <div class="responsive-image">
                 <img src="images/marketing.jpg" alt="laptop-with-charts">
             </div>
-            <h3>Marketing</h3>
-            <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis
-                veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam. Accusantium numquam
-                quisquam expedita, eius ab vitae dolores quidem aliquid, maiores velit assumenda provident. Dolorem illum quas quod
-                placeat natus ullam aspernatur magni omnis?</p>
-            <a class="button services-buttons" href="marketing">Marketing Plans</a>
+            <div class="text-background">
+                <h3>Marketing</h3>
+                <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam.</p>
+                <a class="button services-buttons" href="marketing">Marketing Plans<i class="fa-solid fa-caret-right light-carets"></i></a>
+            </div>
         </div>
     </div>
     <!-- marketing end -->
@@ -96,12 +98,11 @@
             <div class="responsive-image">
                 <img src="images/video.jpg" alt="phone-with-youtube">
             </div>
-            <h3>Video Production</h3>
-            <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis
-                veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam. Accusantium numquam
-                quisquam expedita, eius ab vitae dolores quidem aliquid, maiores velit assumenda provident. Dolorem illum quas quod
-                placeat natus ullam aspernatur magni omnis?</p>
-            <a class="services-buttons" href="video-plans">Video Plans</a>
+            <div class="text-background">
+                <h3>Video Production</h3>
+                <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam.</p>
+                <a class="services-buttons" href="video-plans">Video Plans<i class="fa-solid fa-caret-right light-carets"></i></a>
+            </div>
         </div>
     </div>
     <!-- video production end -->
@@ -111,12 +112,11 @@
             <div class="responsive-image">
                 <img src="images/web.jpg" alt="phone-with-pen-and-paper">
             </div>
-            <h3>Web Development</h3>
-            <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis
-                veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam. Accusantium numquam
-                quisquam expedita, eius ab vitae dolores quidem aliquid, maiores velit assumenda provident. Dolorem illum quas quod
-                placeat natus ullam aspernatur magni omnis?</p>
-            <a class="button services-buttons" href="web-plans">Web Plans</a>
+            <div class="text-background">
+                <h3>Web Development</h3>
+                <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam.</p>
+                <a class="button services-buttons" href="web-plans">Web Plans<i class="fa-solid fa-caret-right light-carets"></i></a>
+            </div>
         </div>
     </div>
     <!-- web dev end -->
@@ -126,12 +126,11 @@
             <div class="responsive-image">
                 <img src="images/print.jpg" alt="news-paper-stands">
             </div>
-            <h3>Print</h3>
-            <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis
-                veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam. Accusantium numquam
-                quisquam expedita, eius ab vitae dolores quidem aliquid, maiores velit assumenda provident. Dolorem illum quas quod
-                placeat natus ullam aspernatur magni omnis?</p>
-            <a class="button services-buttons" href="print-plans">Print Plans</a>
+            <div class="text-background">
+                <h3>Print</h3>
+                <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam.</p>
+                <a class="button services-buttons" href="print-plans">Print Plans<i class="fa-solid fa-caret-right light-carets"></i></a>
+            </div>
         </div>
     </div>
     <!-- print end -->
@@ -143,7 +142,7 @@
         </div>
         <div class="wrapper">
             <h3>Our Vision</h3>
-            <p class="light-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, quo quod necessitatibus magni rem laudantium nemo accusantium, exercitationem blanditiis magnam quam sunt numquam nulla eius delectus sed, natus debitis voluptate! Voluptates cum doloribus earum eveniet a, ut asperiores laboriosam delectus expedita, praesentium, sed deserunt. Placeat consequatur perferendis porro corporis quod!</p>
+            <p class="light-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, quo quod necessitatibus magni rem laudantium nemo accusantium, exercitationem blanditiis.</p>
             <a class="button our-vision-button" href="learn-more">Learn More</a>
         </div>
     </div>
@@ -156,22 +155,30 @@
                     <img src="images/john.jpg" alt="portrait-of-john">
                 </div>
                 <div class="grid-10 team-text">
-                    <h3>John Doe</h3>
-                    <h4>CEO and Co-owner</h4>
-                    <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel saepe accusantium maiores reiciendis. Aspernatur facere dicta deleniti saepe quos asperiores autem temporibus, culpa voluptas corporis ad natus alias ratione distinctio tenetur voluptatum in quidem laudantium, blanditiis assumenda sit sapiente laborum? Aut molestiae quidem quos tempora accusamus, impedit quaerat commodi porro!</p>
+                    <div class="text-background">
+                        <h3>John Doe</h3>
+                        <h4>CEO and Co-owner</h4>
+                        <hr class="our-team-line">
+                        <p class="dark-text team-dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel saepe accusantium maiores reiciendis. Aspernatur facere dicta deleniti saepe quos asperiores autem temporibus.</p>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="wrapper">
             <div class="grid-11 bob-rite">
                 <div class="responsive-image">
                     <img src="images/bob.jpg" alt="portrait-of-bob">
                 </div>
                 <div class="grid-12 team-text">
-                    <h3>Bob Rite</h3>
-                    <h4>CFO and Co-owner</h4>
-                    <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel saepe accusantium maiores reiciendis. Aspernatur facere dicta deleniti saepe quos asperiores autem temporibus, culpa voluptas corporis ad natus alias ratione distinctio tenetur voluptatum in quidem laudantium, blanditiis assumenda sit sapiente laborum? Aut molestiae quidem quos tempora accusamus, impedit quaerat commodi porro!</p>
+                    <div class="text-background">
+                        <h3>Bob Rite</h3>
+                        <h4>CFO and Co-owner</h4>
+                        <hr class="our-team-line">
+                        <p class="dark-text team-dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel saepe accusantium maiores reiciendis. Aspernatur facere dicta deleniti saepe quos asperiores autem temporibus.</p>
+                    </div>
                 </div>
             </div>
+        </div>
     </div>
     <!-- creates contact us section -->
     <div class="grid-13 contact-us">
@@ -187,7 +194,7 @@
                         <input type="text" id="email" name="email">
                         <label for="message">Message</label>
                         <textarea name="message" id="message"></textarea>
-                        <input type="submit" id="submit" value="send">
+                        <input type="submit" id="submit" value="Send">
                     </form>
                 </div>
             </div>
@@ -198,17 +205,17 @@
         <div class="wrapper"></div>
         <h2>Hours of operation</h2>
         <table class="operation-table">
-            <tr>
+            <tr class="table-background">
                 <th>Days</th>
                 <th>Hours</th>
             </tr>
             <tr>
-                <th>Monday - Friday</th>
-                <th>9 AM - 6 PM</th>
+                <td>Monday - Friday</td>
+                <td>9 AM - 6 PM</td>
             </tr>
             <tr>
-                <th>Saturday - Sunday</th>
-                <th>Closed</th>
+                <td>Saturday - Sunday</td>
+                <td>Closed</td>
             </tr>
         </table>
     </div>
@@ -228,7 +235,7 @@
     <footer>
         <div class="wrapper">
             <p class="footer-text">&copy; Copyright Three Star Media, 2022</p>
-            <p class="footer-text">All images are teken from <a href="https://unsplash.com/" target="_blank">Upsplash</a></p>
+            <p class="footer-text">All images are teken from <a href="https://unsplash.com/" class="footer-link" target="_blank">Upsplash</a></p>
         </div>
     </footer>
 </body>
