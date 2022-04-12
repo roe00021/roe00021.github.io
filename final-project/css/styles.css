@@ -18,6 +18,9 @@ body{
     background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
 }
+.container{
+
+}
 .wrapper{
     margin: 1rem auto;
     width: 95%;
@@ -59,9 +62,12 @@ h1{
     font-weight: bold;
 }
 h2{
-    margin: 2rem 0 1rem;
+    margin: 0 0 1rem;
     font-size: 2rem;
     font-weight: bold;
+}
+#about-us-text{
+    margin: 2rem 0 1rem;
 }
 h3{
     margin: 1rem 0;
@@ -74,6 +80,17 @@ h4{
 p{
     margin-bottom: 2rem;
     font-size: .8rem;
+}
+.banner-image{
+    width: 100%;
+    position: absolute;
+}
+.banner-forground{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.385);
+}
+.light-text{
+    color: white;
 }
 .services-buttons{
     padding: 1rem;
@@ -101,6 +118,11 @@ p{
     color: #976a02;
     background-color: #976a02;
 } */
+hr{
+    height: 1px;
+    background-color: #c78c06;
+    border: none;
+}
 .team-dark-text{
     padding-top: 1rem;
 }
@@ -126,11 +148,18 @@ input[type=submit]{
     background-color: #222;
     color: #c78c06;
 }
-.operations-table{
-    width: 100%;
+table {
     border-collapse: collapse;
+    width: 100%;
 }
-
+th{
+    background-color: #ffe6ac;
+}
+th, td{
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: left;
+  }
 .map iframe{
     border: 0;
     width: 100%;

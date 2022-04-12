@@ -35,16 +35,17 @@
         </nav>
     </header>
     <!-- creates banner section with a p class of light text on dark backgrounds -->
+<div class="container">
     <div class="grid-1 banner">
         <div class="banner-image responsive-image">
             <img src="images/main-banner.jpg" alt="people-in-office">
         </div>
         <!-- creates background banner section -->
         <div class="wrapper banner-forground">
-            <h1>Welcome to Three Star Media</h1>
+            <h1 class="light-text">Welcome to Three Star Media</h1>
             <!-- text light class for white text -->
             <p class="light-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatem expedita aliquid molestiae, ducimus iusto velit cumque voluptate nam architecto?</p>
-            <a class="button banner-button" href="connect-with-us">Connect with us<i class="fa-solid fa-caret-right"></i></a>
+            <a class="light-text button banner-button" href="connect-with-us">Connect with us<i class="fa-solid fa-caret-right"></i></a>
         </div>
     </div>
     <!-- creates about us section with a p class of dark text on light backgrounds -->
@@ -54,7 +55,7 @@
             <div class="responsive-image">
                 <img src="images/about-us.jpg" alt="ping-pong-table">
             </div>
-            <h2>About Us</h2>
+            <h2 id="about-us-text">About Us</h2>
             <!-- dark text class for black text -->
             <p class="dark-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, quas! Facere, culpa vel, quia, quibusdam vero ipsam pariatur iusto vitae quo quis temporibus ipsum voluptatibus ex.</p>
             <p class="dark-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam omnis quibusdam suscipit corrupti labore provident officiis cumque repudiandae tempora, minus commodi ea molestias blanditiis incidunt, dolorem vel reprehenderit.</p>
@@ -202,22 +203,29 @@
     </div>
     <!-- creates location section with the base info for a table to be created with css -->
     <div class="grid-14 hours-of-operation">
-        <div class="wrapper"></div>
-        <h2>Hours of operation</h2>
-        <table class="operation-table">
-            <tr class="table-background">
-                <th>Days</th>
-                <th>Hours</th>
-            </tr>
-            <tr>
-                <td>Monday - Friday</td>
-                <td>9 AM - 6 PM</td>
-            </tr>
-            <tr>
-                <td>Saturday - Sunday</td>
-                <td>Closed</td>
-            </tr>
-        </table>
+        <div class="wrapper">
+            <h2>Hours of operation</h2>
+            <table class="operation-table">
+                <tr class="table-background">
+                    <thead>
+                        <th>Days</th>
+                        <th>Hours</th>
+                    </thead>
+                </tr>
+                <tr>
+                    <tbody>
+                        <td>Monday - Friday</td>
+                        <td>9 AM - 6 PM</td>
+                    </tbody>
+                </tr>
+                <tr>
+                    <tbody>
+                        <td>Saturday - Sunday</td>
+                        <td>Closed</td>
+                    </tbody>
+                </tr>
+            </table>
+        </div>
     </div>
     <!-- creates location section -->
     <div class="grid-15 location">
@@ -232,6 +240,7 @@
             </div>
         </div>
     </div>
+</div>
     <footer>
         <div class="wrapper">
             <p class="footer-text">&copy; Copyright Three Star Media, 2022</p>
