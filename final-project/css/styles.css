@@ -170,13 +170,15 @@ h3{
     font-weight: bold;
 }
 h4{
-    margin: -1rem 0 0 ;
+    margin:  -0.5rem 0 0.5rem;
     font-size: 0.75rem;
     font-weight: bold;
+
 }
 p{
     padding-bottom: 1rem;
-    font-size: .8rem;
+    font-size: .7rem;
+    line-height: normal;
 }
 #about-us-text{
     margin: 2rem 0 1rem;
@@ -212,6 +214,7 @@ p{
     padding: 1rem;
     background-color: #222;
     color: white;
+    text-decoration: none;
 }
 .light-carets{
     font-size: 1.5rem;
@@ -239,8 +242,10 @@ p{
 }
 .our-vision-button{
     padding: 1rem;
-    background-color: #222;
+    background-color: rgba(0, 0, 0, 0.385);
+    border: 1px solid #c78c06;
     color: white;
+    margin-top: 7rem;
 }
 /* .our-team-line{
     color: #976a02;
@@ -290,7 +295,7 @@ th, td{
     border: 1px solid #999;
     padding: 0.5rem;
     text-align: left;
-  }
+}
 .map iframe{
     border: 0;
     width: 100%;
@@ -298,6 +303,9 @@ th, td{
 }
 footer{
     background-color: #222;
+}
+.footer-text-top{
+    padding-top: 1rem;
 }
 .footer-text{
     color: #c78c06;
