@@ -66,18 +66,12 @@ body{
     background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
 }
-/* .container{
-
-} */
+/* defines the clear/white margins around the entire page */
 .wrapper{
     margin: 0.8rem;
     width: 95%;
-    background-color: none;
+    background-color: transparent;
 }
-/* img{
-    width: 100%;
-    height: auto;
-} */
 header{
     background-color: #222222;
     padding: 1rem;
@@ -85,32 +79,18 @@ header{
 header nav{
     text-align: center;
 }
+/* creates the home portion of the navigation */
 #nav-active{
     display: block;
     color: #222;
     background-color: #c78c06;
     padding-top: 2rem;
     padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: -1rem;
 }
 .star-background{
     background-color: #c78c06;
 }
-/* .star-logo-background{
-    background-color: #c78c06;
-    width: 100%;
-} */
-/* .nav-background{
-    background-color: #c78c06;
-} */
-/* .flexbox-nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    overflow: auto;
-    margin-top: 5rem;
-} */
 ul{
     list-style-type: none;
 }
@@ -125,11 +105,17 @@ ul li{
 a:hover, a:active{
     text-decoration: underline;
 }
+/* creates search section with flex in order to display on one row */
+.form-area{
+    display: flex;
+}
+/* creates search bar */
 .search-bar{
     font-size: 1rem;
     border: none;
     align-items: stretch;
 }
+/* creates search button */
 .search-button{
     background: #ddd;
     font-size: 1rem;
@@ -138,22 +124,14 @@ a:hover, a:active{
     cursor: pointer;
     background-color: transparent;
     border-style: solid;
-  }
+}
+/* creates responsive images */
 .responsive-image{
     width: 100%;
     height: auto;
     margin-bottom: -1rem;
 }
-.form-area{
-    display: flex;
-}
-/* #star-logo{
-    max-width: 10%;
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    background-color: #c78c06;
-} */
+/* defines all text properties: h1, h2, h3, h4 and p */
 h1{
     margin: 1rem 0;
     font-size: 3rem;
@@ -180,14 +158,13 @@ p{
     font-size: .7rem;
     line-height: normal;
 }
-#about-us-text{
-    margin: 2rem 0 1rem;
-}
+/* creates the office background spanning the entire div */
 .banner{
     background-image: url(../images/main-banner.jpg);
     background-size: cover;
     padding: 2rem 0 2rem;
 }
+/* creates the forground of dark semi-transparent background and text */
 .banner-forground{
     width: 100%;
     position: relative;
@@ -196,31 +173,42 @@ p{
     padding: 1rem 1rem 2rem;
     border: 1rem;
 }
+/* targets the p tag of the div */
 #banner-light-text{
     padding-bottom: 2rem;
 }
+/* stules the button for the banner section */
 #banner-button-style{
     padding: 1rem;
     background-color: #c78c06;
     color: #222;
 }
+/* adjusts margins for the pinp pong table image */
 #pong-table-img{
     margin-top: 1rem;
 }
+/* sizes the about us section */
+#about-us-text{
+    margin: 2rem 0 1rem;
+}
+/* targets all text that is supposed to be white */
 .light-text{
     color: white;
 }
+/* targets all buttons within the services section of the page */
 .services-buttons{
     padding: 1rem;
     background-color: #222;
     color: white;
     text-decoration: none;
 }
+/* targets all caret icons that are supposed to be white */
 .light-carets{
     font-size: 1.5rem;
     padding: 0.25rem;
     color: white;
 }
+
 .about-us{
     background-color: #ffe6ac;
     margin-top: -1rem;
@@ -262,8 +250,13 @@ hr{
 input[type=text]{
     width: 100%;
     padding: 0.2rem;
-    margin: 0.5rem 0 0.5rem;
     border: 1px solid #ccc;
+}
+input[name=full-name]{
+    margin: 0.5rem 0 0.5rem;
+}
+input[name=email]{
+    margin: 0.5rem 0 0.5rem;
 }
 .form-section{
     font-size: 0.8rem;
@@ -274,6 +267,7 @@ textarea{
     padding: 2.5rem;
     margin: 0.5rem 0 0.5rem;
     resize: none;
+    border: 1px solid #ccc;
 }
 /* formats "Send" button */
 input[type=submit]{
