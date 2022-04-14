@@ -17,43 +17,49 @@
 <body>
     <!-- creates header section with navigation -->
     <header class="clearfix">
-        <nav>
-            <div class="responsive-image">
-                <img src="images/logo.png" alt="star-logo" id="star-logo">
-            </div>
-            <ul>
-                <li><a href="#" class="home-button">Home</a></li>
-                <li><a href="#" class="nav-buttons">About Us</a></li>
-                <li><a href="#" class="nav-buttons">Services</a></li>
-                <li><a href="#" class="nav-buttons">Team</a></li>
-                <li><a href="#" class="nav-buttons">Contact</a></li>
-            </ul>
-            <form id="nav-search">
+                <!-- <div class="responsive-image star-logo-background"> -->
+                <div class="star-background">
+                    <img src="images/logo.png" alt="star-logo" class="star-background-img">
+                </div>
+                <div class="flexbox-nav">
+                    <nav>
+                        <ul>
+                            <li><a href="#"  id="nav-active" class="nav-buttons">Home</a></li>
+                            <li><a href="#" class="nav-buttons">About Us</a></li>
+                            <li><a href="#" class="nav-buttons">Services</a></li>
+                            <li><a href="#" class="nav-buttons">Team</a></li>
+                            <li><a href="#" class="nav-buttons">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        <div>
+            <form id="nav-search" class="form-area">
                 <input type="text" placeholder="Search" name="search">
-                <button type="submit"><i id="nav-search-button"></i></button>
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
-        </nav>
+        </div>
+        
     </header>
     <!-- creates banner section with a p class of light text on dark backgrounds -->
 <div class="container">
     <div class="grid-1 banner">
-        <div class="banner-image responsive-image">
+        <!-- <div class="banner-image responsive-image">
             <img src="images/main-banner.jpg" alt="people-in-office">
-        </div>
+        </div> -->
         <!-- creates background banner section -->
         <div class="wrapper banner-forground">
             <h1 class="light-text">Welcome to Three Star Media</h1>
             <!-- text light class for white text -->
-            <p class="light-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatem expedita aliquid molestiae, ducimus iusto velit cumque voluptate nam architecto?</p>
-            <a class="light-text button banner-button" href="connect-with-us">Connect with us<i class="fa-solid fa-caret-right"></i></a>
+            <p id="banner-light-text" class="light-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatem expedita aliquid molestiae, ducimus iusto velit cumque voluptate nam architecto?</p>
+            <a id="banner-button-style" class="light-text button banner-button" href="connect-with-us">Connect with us<i class="fa-solid fa-caret-right"></i></a>
         </div>
     </div>
     <!-- creates about us section with a p class of dark text on light backgrounds -->
     <div class="grid-2 about-us">
         <div class="wrapper">
             <!-- creates responsive image class -->
-            <div class="responsive-image">
-                <img src="images/about-us.jpg" alt="ping-pong-table">
+            <div>
+                <img class="responsive-image" id="pong-table-img" src="images/about-us.jpg" alt="ping-pong-table">
             </div>
             <h2 id="about-us-text">About Us</h2>
             <!-- dark text class for black text -->
@@ -67,13 +73,13 @@
             <h2>Our Services</h2>
             <!-- this marks the start of the div for the grid section -->
             <div class="digital-transformation">
-                <div class="responsive-image">
-                    <img src="images/digital.jpg" alt="phone-and-laptop">
+                <div>
+                    <img class="responsive-image" src="images/digital.jpg" alt="phone-and-laptop">
                 </div>
                 <div class="text-background">
                     <h3>Digital Transformation</h3>
                     <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam.</p>
-                    <a class="button services-buttons" href="digital-plans">Digital Plans<i class="fa-solid fa-caret-right light-carets"></i></a>
+                    <a class="button services-buttons light-carets" href="digital-plans">Digital Plans<i class="fa-solid fa-caret-right"></i></a>
                 </div>
             </div>
         </div>
@@ -82,8 +88,8 @@
     <!-- marketing start -->
     <div class="grid-4 marketing">
         <div class="wrapper">
-            <div class="responsive-image">
-                <img src="images/marketing.jpg" alt="laptop-with-charts">
+            <div>
+                <img class="responsive-image" src="images/marketing.jpg" alt="laptop-with-charts">
             </div>
             <div class="text-background">
                 <h3>Marketing</h3>
@@ -96,8 +102,8 @@
     <!-- video production start -->
     <div class="grid-5 video-production">
         <div class="wrapper">
-            <div class="responsive-image">
-                <img src="images/video.jpg" alt="phone-with-youtube">
+            <div>
+                <img  class="responsive-image" src="images/video.jpg" alt="phone-with-youtube">
             </div>
             <div class="text-background">
                 <h3>Video Production</h3>
@@ -110,8 +116,8 @@
     <!-- web dev start -->
     <div class="grid-6 web-development">
         <div class="wrapper">
-            <div class="responsive-image">
-                <img src="images/web.jpg" alt="phone-with-pen-and-paper">
+            <div>
+                <img  class="responsive-image" src="images/web.jpg" alt="phone-with-pen-and-paper">
             </div>
             <div class="text-background">
                 <h3>Web Development</h3>
@@ -124,8 +130,8 @@
     <!-- print start -->
     <div class="grid-7 print">
         <div class="wrapper">
-            <div class="responsive-image">
-                <img src="images/print.jpg" alt="news-paper-stands">
+            <div>
+                <img class="responsive-image" src="images/print.jpg" alt="news-paper-stands">
             </div>
             <div class="text-background">
                 <h3>Print</h3>
@@ -138,8 +144,8 @@
     <!-- creates class and section for our vision -->
     <!-- no wrapper class over image as the image will span 100% of the background width -->
     <div class="grid-8 our-vision">
-        <div class="paper-boats responsive-image">
-            <img src="images/vision.jpg" alt="paper-boats">
+        <div class="paper-boats">
+            <img class="responsive-image" src="images/vision.jpg" alt="paper-boats">
         </div>
         <div class="wrapper">
             <h3>Our Vision</h3>
@@ -152,8 +158,8 @@
         <div class="wrapper">
             <h2>Our Team</h2>
             <div class="grid-9 john-doe">
-                <div class="responsive-image">
-                    <img src="images/john.jpg" alt="portrait-of-john">
+                <div>
+                    <img class="responsive-image" src="images/john.jpg" alt="portrait-of-john">
                 </div>
                 <div class="grid-10 team-text">
                     <div class="text-background">
@@ -167,8 +173,8 @@
         </div>
         <div class="wrapper">
             <div class="grid-11 bob-rite">
-                <div class="responsive-image">
-                    <img src="images/bob.jpg" alt="portrait-of-bob">
+                <div>
+                    <img class="responsive-image" src="images/bob.jpg" alt="portrait-of-bob">
                 </div>
                 <div class="grid-12 team-text">
                     <div class="text-background">
