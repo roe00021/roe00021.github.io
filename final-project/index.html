@@ -34,8 +34,8 @@
                 </div>
         <div>
             <form id="nav-search" class="form-area">
-                <input type="text" placeholder="Search" name="search">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input class="search-bar" type="text" placeholder="Search" name="search">
+                <button class="search-button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
         
@@ -79,7 +79,7 @@
                 <div class="text-background">
                     <h3>Digital Transformation</h3>
                     <p class="dark-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis voluptas aut repudiandae debitis veritatis veniam, dolor alias quos ut fugit iusto aspernatur quia reprehenderit aliquam.</p>
-                    <a class="button services-buttons light-carets" href="digital-plans">Digital Plans<i class="fa-solid fa-caret-right"></i></a>
+                    <a class="button services-buttons" href="digital-plans">Digital Plans<i class="fa-solid fa-caret-right light-carets"></i></a>
                 </div>
             </div>
         </div>
@@ -144,11 +144,11 @@
     <!-- creates class and section for our vision -->
     <!-- no wrapper class over image as the image will span 100% of the background width -->
     <div class="grid-8 our-vision">
-        <div class="paper-boats">
+        <!-- <div class="paper-boats">
             <img class="responsive-image" src="images/vision.jpg" alt="paper-boats">
-        </div>
+        </div> -->
         <div class="wrapper">
-            <h3>Our Vision</h3>
+            <h3 class="light-text">Our Vision</h3>
             <p class="light-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, quo quod necessitatibus magni rem laudantium nemo accusantium, exercitationem blanditiis.</p>
             <a class="button our-vision-button" href="learn-more">Learn More</a>
         </div>
@@ -210,7 +210,7 @@
     <!-- creates location section with the base info for a table to be created with css -->
     <div class="grid-14 hours-of-operation">
         <div class="wrapper">
-            <h2>Hours of operation</h2>
+            <h3>Hours of operation</h3>
             <table class="operation-table">
                 <tr class="table-background">
                     <thead>
@@ -236,7 +236,7 @@
     <!-- creates location section -->
     <div class="grid-15 location">
         <div class="wrapper">
-            <h2>Location</h2>
+            <h3>Location</h3>
             <div class="map">
                 <!-- implements google maps -->
                 <iframe

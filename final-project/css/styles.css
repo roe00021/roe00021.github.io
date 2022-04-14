@@ -87,10 +87,11 @@ header nav{
 }
 #nav-active{
     display: block;
-    color: black;
+    color: #222;
     background-color: #c78c06;
     padding-top: 2rem;
-    padding-bottom: .5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 .star-background{
     background-color: #c78c06;
@@ -124,6 +125,20 @@ ul li{
 a:hover, a:active{
     text-decoration: underline;
 }
+.search-bar{
+    font-size: 1rem;
+    border: none;
+    align-items: stretch;
+}
+.search-button{
+    background: #ddd;
+    font-size: 1rem;
+    color: #c78c06;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-style: solid;
+  }
 .responsive-image{
     width: 100%;
     height: auto;
@@ -146,23 +161,25 @@ h1{
 }
 h2{
     margin: 0 0 1rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
-}
-#about-us-text{
-    margin: 2rem 0 1rem;
 }
 h3{
     margin: 1rem 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 h4{
     margin: -1rem 0 0 ;
     font-size: 0.75rem;
+    font-weight: bold;
 }
 p{
     padding-bottom: 1rem;
     font-size: .8rem;
+}
+#about-us-text{
+    margin: 2rem 0 1rem;
 }
 .banner{
     background-image: url(../images/main-banner.jpg);
@@ -215,9 +232,15 @@ p{
     width: 100%;
 }
 .our-vision{
-    background-image: url(../images/main-banner.jpg);
+    background-image: url(../images/vision.jpg);
     background-size: cover;
+    background-position-y: center;
     padding: 2rem 0 2rem;
+}
+.our-vision-button{
+    padding: 1rem;
+    background-color: #222;
+    color: white;
 }
 /* .our-team-line{
     color: #976a02;
@@ -236,6 +259,9 @@ input[type=text]{
     padding: 0.2rem;
     margin: 0.5rem 0 0.5rem;
     border: 1px solid #ccc;
+}
+.form-section{
+    font-size: 0.8rem;
 }
 /* formats "Message" with proper sizing and removing the resize */
 textarea{
