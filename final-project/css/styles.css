@@ -191,6 +191,10 @@ p{
 #about-us-text{
     margin: 2rem 0 1rem;
 }
+.about-us{
+    background-color: #ffe6ac;
+    margin-top: -1rem;
+}
 /* targets all text that is supposed to be white */
 .light-text{
     color: white;
@@ -208,17 +212,14 @@ p{
     padding: 0.25rem;
     color: white;
 }
-
-.about-us{
-    background-color: #ffe6ac;
-    margin-top: -1rem;
-}
+/* targets the background section of our services */
 .text-background{
     background-color: #ffe6ac;
     margin: 0;
     padding: 1rem 1rem 2rem;
     border: 1rem;
 }
+/* targets the our vision section with background images and formatting */
 .paper-boats{
     width: 100%;
 }
@@ -235,29 +236,30 @@ p{
     color: white;
     margin-top: 7rem;
 }
-/* .our-team-line{
-    color: #976a02;
-    background-color: #976a02;
-} */
+/* creates horizontal rules for both team members*/
 hr{
     height: 1px;
     background-color: #c78c06;
     border: none;
 }
+/* adds padding for the text */
 .team-dark-text{
     padding-top: 1rem;
 }
+/* targets input fields for full name and email */
 input[type=text]{
     width: 100%;
     padding: 0.2rem;
     border: 1px solid #ccc;
 }
+/* overrides margin */
 input[name=full-name]{
     margin: 0.5rem 0 0.5rem;
 }
 input[name=email]{
     margin: 0.5rem 0 0.5rem;
 }
+/* formats message section */
 .form-section{
     font-size: 0.8rem;
 }
@@ -278,6 +280,7 @@ input[type=submit]{
     background-color: #222;
     color: #c78c06;
 }
+/* formats the table  */
 table {
     border-collapse: collapse;
     width: 100%;
@@ -290,11 +293,13 @@ th, td{
     padding: 0.5rem;
     text-align: left;
 }
+/* creates sizing for the google map */
 .map iframe{
     border: 0;
     width: 100%;
     height: 20rem;
 }
+/* formats footer section */
 footer{
     background-color: #222;
 }
