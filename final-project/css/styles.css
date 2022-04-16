@@ -312,3 +312,22 @@ footer{
 .footer-link{
     text-decoration: underline;
 }
+/* creates desktop view */
+@media screen and (min-width: 760px){
+    .star-background{
+        background-color: transparent;
+    }
+    nav{
+        float: none;
+    }
+    ul{
+        padding-top: 1rem;
+    }
+    ul li{
+        display: inline-block;
+        margin-left: 1rem;
+    }
+    #nav-search{
+        float: right;
+    }
+}
