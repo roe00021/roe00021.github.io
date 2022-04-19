@@ -58,15 +58,17 @@
     </div>
     <!-- creates about us section with a p class of dark text on light backgrounds -->
     <div class="grid-2 about-us">
-        <div class="wrapper">
+        <div class="wrapper about-us-web">
             <!-- creates responsive image class -->
             <div>
                 <img class="responsive-image" id="pong-table-img" src="images/about-us.jpg" alt="ping-pong-table">
             </div>
+            <div>
             <h2 id="about-us-text">About Us</h2>
             <!-- dark text class for black text -->
             <p class="dark-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, quas! Facere, culpa vel, quia, quibusdam vero ipsam pariatur iusto vitae quo quis temporibus ipsum voluptatibus ex.</p>
             <p class="dark-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam omnis quibusdam suscipit corrupti labore provident officiis cumque repudiandae tempora, minus commodi ea molestias blanditiis incidunt, dolorem vel reprehenderit.</p>
+            </div>
         </div>
     </div>
     <div class="grid-3 our-services">
@@ -156,9 +158,47 @@
         </div>
     </div>
     <!-- creates section for out team -->
+
+    <!--
+        <div class="our-team wrapper">
+            <h2>Our Team</h2>
+
+            <img class="john-img" src="images/john.jpg" alt="John">
+            <div class="john-bio">
+                name, title, bio
+            </div>
+
+            <img class="bob-img" src="images/bob.jpg" alt="Bob">
+            <div class="bob-bio">
+                name, title, bio
+            </div>
+        </div>
+
+        - 2 columns
+        - grid-template-areas
+        - h2 across 2 columns
+        - john image in 1 col
+        - john bio in second col
+        - bob bio in the new row
+        - bob image in the second col of that row
+    -->
+
+
+
+
     <div class="our-team">
         <div class="wrapper">
-            <h2>Our Team</h2>
+            <!-- <h2>Our Team</h2>
+
+            <img class="john-img responsive-image" src="images/john.jpg" alt="John">
+            <div class="john-bio">
+                name, title, bio
+            </div>
+
+            <img class="bob-img responsive-image" src="images/bob.jpg" alt="Bob">
+            <div class="bob-bio">
+                name, title, bio
+            </div> -->
             <div class="grid-9 john-doe">
                 <div>
                     <img class="responsive-image" src="images/john.jpg" alt="portrait-of-john">
@@ -214,24 +254,22 @@
         <div class="wrapper">
             <h3>Hours of operation</h3>
             <table class="operation-table">
-                <tr class="table-background">
-                    <thead>
+                <thead>
+                    <tr class="table-background">
                         <th>Days</th>
                         <th>Hours</th>
-                    </thead>
-                </tr>
-                <tr>
-                    <tbody>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
                         <td>Monday - Friday</td>
                         <td>9 AM - 6 PM</td>
-                    </tbody>
                 </tr>
                 <tr>
-                    <tbody>
                         <td>Saturday - Sunday</td>
                         <td>Closed</td>
-                    </tbody>
                 </tr>
+            </tbody>
             </table>
         </div>
     </div>

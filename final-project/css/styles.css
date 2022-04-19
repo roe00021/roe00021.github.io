@@ -302,6 +302,7 @@ th, td{
 /* formats footer section */
 footer{
     background-color: #222;
+    margin-bottom: -1rem;
 }
 .footer-text-top{
     padding-top: 1rem;
@@ -317,7 +318,12 @@ footer{
     *{
         margin:0;
         padding: 0;
-      }
+    }
+    /* .wrapper { 
+        max-width: 1200px; 
+        margin: 0 auto; 
+        float: none; 
+    }  */
     .star-background{
         background-color: transparent;
     }
@@ -330,6 +336,7 @@ footer{
     ul{
         padding-top: 1rem;
     }
+    /* puts nav in a row */
     ul li{
         display: inline-block;
         margin-left: 1rem;
@@ -337,37 +344,73 @@ footer{
     #nav-search{
         float: right;
     }
+    #nav-active{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+    }
+    /* creates columns for page grid */
     .container{
         display: grid;
         height: 100vh;
         grid-template-columns: repeat(6, 1fr);
     }
-    /* .container div{
+    /* sets max width */
+    .wrapper{
         max-width: 1200px;
-    } */
+        float: none;
+    }
+    header{
+        display: flex;
+        
+    }
+    header div{
+        max-width: 1200px;
+        align-self: center;
+        margin: auto;
+    }
+    /* creates grid layout */
     header {
         grid-column: 1 / span 6;
         grid-row: 1;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
     .grid-1 {
         grid-column: 1 / span 6;
         grid-row: 2;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
     .grid-2{
         grid-column: 1 / span 6;
         grid-row: 3;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
+    /* .about-us-web div{
+        display: flex;
+        flex-direction: row-reverse;
+    } */
+    /* .our-services{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    } */
     .grid-3{
         grid-column: 1 / span 3;
         grid-row: 4;
+        padding-left: 5rem;
     }
     .grid-4{
         grid-column: 4 / span 3;
         grid-row: 4;
+        align-self: end;
+        padding-right: 5rem;
     }
     .grid-5{
         grid-column: 1 / span 2;
         grid-row: 5;
+        padding-left: 5rem;
     }
     .grid-6{
         grid-column: 3 / span 2;
@@ -376,49 +419,68 @@ footer{
     .grid-7{
         grid-column: 5 / span 2;
         grid-row: 5;
+        padding-right: 5rem;
     }
     .grid-8{
         grid-column: 1 / span 6;
         grid-row: 6;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
     .our-team{
         grid-column: 1 / span 6;
         grid-row: 7;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    /* .our-team .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "team-hdr team-hdr"
+        "bob-img bob-bio"
+        "john-bio john-image";
+    }
+
+    .our-team h2 {
+        grid-area: team-hdr;
+    }
+
+    .john-img {
+        grid-area: john-img;
+    }
+
+    .john-bio {
+        grid-area: john-bio;
+    }
+
+    .bob-img {
+        grid-area: bob-img;
+    }
+
+    .bob-bio {
+        grid-area: bob-bio;
+    } */
+
+
+
+    .grid-9{
         display: flex;
-        flex-wrap: wrap;
-    }
-    /* .stack-8 .block:nth-child(1){
-        flex-basis: calc(25% - 4px);
-      }
-      .stack-8 .block:nth-child(2){
-        flex-basis: calc(75% - 4px);
-      }
-      .stack-8 .block:nth-child(3), .stack-8 .block:nth-child(4){
-        flex-basis: calc(50% - 4px);
-      } */
-    /* .grid-9{
-        grid-column: 1 / span 3;
-        grid-row: 7;
-    }
-    .grid-10{
-        grid-column: 4 / span 3;
-        grid-row: 7;
     }
     .grid-11{
-        grid-column: 4 / span 3;
-        grid-row: 8;
+        display: flex;
+        flex-direction: row-reverse;
     }
-    .grid-12{
-        grid-column: 4 / span 3;
-        grid-row: 8;
-    } */
     .grid-13{
         grid-column: 1 / span 3;
         grid-row: 9;
+        padding-left: 5rem;
     }
     .grid-15{
         grid-column: 4 / span 3;
         grid-row: 9;
+        padding-right: 5rem;
     }
     .grid-14{
         grid-column: 1 / span 6;
@@ -427,83 +489,53 @@ footer{
     footer{
         grid-column: 1 / span 6;
         grid-row: 10;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
+    /* defines all text sizing */
+    h1{
+        margin: 1rem 0;
+        font-size: 5rem;
+        font-weight: bold;
+    }
+    h2{
+        margin: 0 0 1rem;
+        font-size: 2.8rem;
+        font-weight: bold;
+    }
+    h3{
+        margin: 1rem 0;
+        font-size: 2.2rem;
+        font-weight: bold;
+    }
+    h4{
+        margin:  -0.5rem 0 0.5rem;
+        font-size: .9rem;
+        font-weight: bold;
     
-    /* .container{
-        background-color: transparent;
-        display: grid;
-        max-width: 40%;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(9, 1fr);
-        grid-template-rows: auto;
-        box-sizing: border-box;
     }
-    .wrapper{
-        margin: 5rem;
-        width: 95%;
-        background-color: transparent;
+    p{
+        padding-bottom: 1rem;
+        font-size: .85rem;
+        line-height: normal;
     }
-    .container > div {
-    
-    } */
-    /* }
-    .grid-1{
-        grid-column: span 6;
-    }
-    .grid-2{
-        grid-column: span 6;
-        grid-row: 2;
-    }
-    .grid-3{
-        grid-column: span 3;
-        grid-row: 3;
-    }
-    .grid-4{
-        grid-column: 4 / span 3;
-        grid-row: 3;
-    }
-    .grid-5{
-        grid-column: span 2;
-        grid-row: 4;
-    }
-    .grid-6{
-        grid-column: 3 / span 2;
-        grid-row: 4;
-    }
-    .grid-7{
-        grid-column: 5 / span 2;
-        grid-row: 4;
-    }
-    .grid-8{
-        grid-column: span 6;
-        grid-row: 5;
-    } */
-    /* .grid-9{
-        grid-column: span 3;
-        grid-row: 6;
-    }
-    .grid-10{
-        grid-column: 4 / span 3;
-        grid-row: 6;
-    }
-    .grid-11{
-        grid-column: span 3;
-        grid-row: 7;
-    }
-    .grid-12{
-        grid-column: 4 / span 3;
-        grid-row: 7;
-    }
-    .grid-13{
-        grid-column: span 3;
-        grid-row: 8;
-    }
-    .grid-14{
-        grid-column: 4 / span 3;
-        grid-row: 8;
-    }
-    .grid-15{
-        grid-column: span 6;
-        grid-row: 9;
-    } */
 }
+
+/*
+.our-team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-area:
+    "team-hdr team-hdr"
+    "john-img john-bio"
+    "bob-bio bob-img";
+}
+
+.our-team h2 {
+    grid-area: team-hdr;
+}
+
+.our-team .john-img {
+
+}
+*/
