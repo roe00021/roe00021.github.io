@@ -321,6 +321,9 @@ footer{
     .star-background{
         background-color: transparent;
     }
+    /* header{
+        align-items: center;
+    } */
     nav{
         float: none;
     }
@@ -381,7 +384,18 @@ footer{
     .our-team{
         grid-column: 1 / span 6;
         grid-row: 7;
+        display: flex;
+        flex-wrap: wrap;
     }
+    /* .stack-8 .block:nth-child(1){
+        flex-basis: calc(25% - 4px);
+      }
+      .stack-8 .block:nth-child(2){
+        flex-basis: calc(75% - 4px);
+      }
+      .stack-8 .block:nth-child(3), .stack-8 .block:nth-child(4){
+        flex-basis: calc(50% - 4px);
+      } */
     /* .grid-9{
         grid-column: 1 / span 3;
         grid-row: 7;
